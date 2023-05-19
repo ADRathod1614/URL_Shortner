@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+/* Styling */
+
+body,h1 {
+  margin: auto;
+  width: 540px; 
+  margin-left: 250px;
+  padding: 50px;
+  text-align: centre;
+  font-family:  sans-serif; 
+  color: #2E475D;    
+}
+#btn{
+    /* color: aliceblue; */
+    margin-top: 50px;
+    padding:auto;
+    text-align: center;
+    width: 100px;
+    margin-left: 350px;
+    align-items: center;
+}
+#btn:hover{
+    background-color: azure;
+}
+#input:hover{
+    background-color: aliceblue;
+}
+#input{
+    width: 750px;
+    height: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>URL Shortner</h1>
+    <form method="Post" action="{{url_for('index')}}">
+        <input id="input" type="url" name="long_url" placeholder="Enter your long url" required>
+        <button id="btn" type="submit">Shortner</button>
+    </form>
+</body>
+</html>
